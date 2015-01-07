@@ -1,0 +1,35 @@
+how the program works 
+1. In this program, it will get 10 source result from google by google API
+2. Start the multithread, each thread will download one page, parse it and add the url into a maximum heap. The thread will stop until the total download page reach the required amount.
+3. The work process is shown in 'workProcess.pdf'
+4. The program contain following main class:
+	PageOperation:download webPage, Parse webpage, check the url type, remove duplicate url
+	PageQueue: record the webpage to be download. record all webpage downloaded
+	WebScrawler: control the main work process
+5.I use 'simplejson-3.3.3' to parse the search result of google engine. I parse the website content using the HTMLParse module
+
+The performance improve:
+1.The max heap structure(PageQueue)
+	I use the heapq module to maintain the minimum heap.
+	Check whether it is in the downloaded dictionary-> insert new url into heap-> remove the last part(minimum part) of the heap to maitain the length of queue as the total page. 
+	pop the maximum url when we need->check whether it is in the downloaded dictionary
+	Do not need to updata the priority of the url in the heap and just insert the same url with higher priority. The same url with higher priority will be pop firstly. When the url with lower priority is poped, we will check the downloaded dictionary to drop this url since it is downloaded before. I use this method to improve the performance.
+2.The focus strategy(PageOperation)
+	1. the number of query words in the parse result of the page content will decide the proirity of the urls in page content
+	2.If the page can not be parsed, search the query words in the page content without parse process
+	3. If the page contain all query words, the proirity will be double.
+3. Robot (PageQueue)
+	When we get the url to download, we will check the robot.txt. It will reduce the check times.
+4.Multithread:(WebScrawler)
+	It will download page, compress, parse and save page parally
+5.Data Save:
+	The page content will be compressed with 'zlib.Z_BEST_COMPRESSION' level(PageOperation)
+	The 200 page will be save as one file. It will reduce the time of IO
+	The process: Download page -> parse page -> record page content in memory -> save file until the count is 200. It will reduce the time of IO, compare to download page into disk and open the file to read.
+	
+
+what the major functions are
+1.download webpage
+2.get the google search result
+3.Parse HTML
+4.check the validation of URL

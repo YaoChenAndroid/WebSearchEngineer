@@ -1,0 +1,27 @@
+The query string is:google baidu 
+ The total page is: 10
+3:  Priority: 2147483647 query words count: 183 ,download time: 0.27, pageSize: 113314, return code: 200
+ Url:http://www.google.com/finance?q=BIDU
+2:  Priority: 2147483647 query words count: 1 ,download time: 0.34, pageSize: 54826, return code: 200
+ Url:http://money.cnn.com/2012/02/13/technology/thebuzz/
+8:  Priority: 183 query words count: 65 ,download time: 0.37, pageSize: 11104, return code: 200
+ Url:http://167.206.10.217/?tab=e1
+5:  Priority: 2147483647 query words count: 12 ,download time: 0.65, pageSize: 56500, return code: 200
+ Url:http://www.clickz.com/clickz/column/2288982/search-in-china-how-baidu-is-different-from-google
+4:  Priority: 2147483647 query words count: 14 ,download time: 0.38, pageSize: 53663, return code: 200
+ Url:http://thenextweb.com/asia/2014/01/27/bid-challenge-google-baidu-tests-search-engine-thailand-brazil-egypt/
+1:  Priority: 2147483647 query words count: 14 ,download time: 0.32, pageSize: 203135, return code: 200
+ Url:http://en.wikipedia.org/wiki/Baidu
+7:  Priority: 2147483647 query words count: 12 ,download time: 1.21, pageSize: 68281, return code: 200
+ Url:http://blog.sfgate.com/techchron/2013/10/15/baidu-google-bitcoin/
+9:  Priority: 2147483647 query words count: 86 ,download time: 1.17, pageSize: 73073, return code: 200
+ Url:http://www.zdnet.com/google-vs-facebook-vs-baidu-battle-of-the-internet-empires-7000021589/
+10:  Priority: 2147483647 query words count: 3 ,download time: 1.51, pageSize: 72308, return code: 200
+ Url:http://www.bloomberg.com/news/2013-04-30/a-tale-of-two-search-engines-why-google-s-winning-and-baidu-isn-t.html
+6:  Priority: 2147483647 query words count: 20 ,download time: 0.73, pageSize: 71670, return code: 200
+ Url:http://investorplace.com/2013/08/google-vs-baidu-which-is-the-better-bet-right-now/
+The persentage of page containing all search words: 60.00%
+The persentage of page containing part search words: 40.00%
+The persentage of page containing no search words: 0.00%
+The size of download pages: 194924 Byte 
+The time used: 10.53 
